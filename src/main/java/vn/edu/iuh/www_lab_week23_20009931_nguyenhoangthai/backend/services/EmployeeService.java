@@ -1,7 +1,7 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.services;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.services;
 
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.models.Employee;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.repositories.EmployeeRepository;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.Employee;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.repositories.EmployeeRepository;
 
 import java.util.List;
 
@@ -12,9 +12,9 @@ public class EmployeeService {
         repository = new EmployeeRepository();
     }
 
-//    public void insertEmp(Employee employee) {
-//        repository.insertEmp(employee);
-//    }
+    public void insertEmp(Employee employee) {
+        repository.insertEmp(employee);
+    }
 
 //    public Optional<Employee> findById(long id) {
 //        return repository.findbyId(id);

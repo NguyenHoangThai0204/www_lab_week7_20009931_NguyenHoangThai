@@ -1,7 +1,7 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.models;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models;
 
 import jakarta.persistence.*;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.enums.ProductStatus;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.enums.ProductStatus;
 
 import java.util.List;
 

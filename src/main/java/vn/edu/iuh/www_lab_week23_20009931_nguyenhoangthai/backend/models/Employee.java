@@ -1,11 +1,10 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.models;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.enums.EmployeeStatus;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.enums.EmployeeStatus;
 
 import java.sql.Date;
-import java.time.LocalDate;
 
 @Entity
 @Table(name = "employee")
@@ -29,7 +28,6 @@ public class Employee{
     public Employee() {
 
     }
-
 
     public long getId() {
         return id;

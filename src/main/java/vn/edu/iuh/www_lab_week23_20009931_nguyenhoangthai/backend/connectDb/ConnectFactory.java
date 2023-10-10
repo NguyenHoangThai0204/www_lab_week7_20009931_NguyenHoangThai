@@ -1,11 +1,12 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.connectDb;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.connectDb;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.models.*;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.*;
+
 
 
 public class ConnectFactory{

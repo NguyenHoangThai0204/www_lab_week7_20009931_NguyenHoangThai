@@ -1,5 +1,6 @@
 <%@ page import="vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.Employee" %>
 <%@ page import="java.util.List" %>
+<%@ page import="vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.Customer" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%--
   Created by IntelliJ IDEA.
@@ -17,36 +18,33 @@
 </head>
 <body>
 <table style="width: 70%; margin: auto;">
-        <h1 style="text-align: center"> Danh sách nhân viên </h1>
+        <h1 style="text-align: center"> Danh sách khách hàng </h1>
         <tr>
             <th>Id</th>
             <th>Name</th>
             <th>Address</th>
             <th>Email</th>
-            <th>Date</th>
-            <th>Status</th>
+            <th>PhoneNumber</th>
             <th></th>
         </tr>
-        <% List<Employee> list ;
-            list = (List<Employee>) request.getAttribute("listEmployees");
-    for (Employee e  :list
+        <% List<Customer> list ;
+            list = (List<Customer>) request.getAttribute("listCustomer");
+    for (Customer e  :list
          ) {%>
         <tr style="text-align: center">
             <td><%= e.getId() %> </td>
-            <td><%= e.getFull_name()%> </td>
             <td><%= e.getAddress() %> </td>
             <td><%= e.getEmail()%> </td>
-            <td><%= e.getDob()%> </td>
-            <td><%= e.getStatus() %> </td>
+            <td><%= e.getPhone() %> </td>
             <td>
-                <a href="insertUpdateEmp.jsp" style="margin-right: 5px">update</a>
+                <a style="margin-right: 5px">update</a>
                 <a >delete</a>
             </td>
         </tr>
     <%}%>
-        <div style="text-align: center">
-            <a href="insertUpdateEmp.jsp" style="margin-right: 5px;font-size: 25px;font-weight: bold;">Insert</a>
-        </div>
+    <div style="text-align: right;">
+        <a href="insertUpdateCus.jsp" style="margin-right: 5px;font-size: 25px;font-weight: bold;">Insert</a>
+    </div>
 </table>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.enums;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.enums;
 
 public enum ProductStatus {
     ACCTIVE(1),

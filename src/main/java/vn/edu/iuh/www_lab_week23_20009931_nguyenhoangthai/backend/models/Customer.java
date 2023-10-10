@@ -1,4 +1,4 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.models;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

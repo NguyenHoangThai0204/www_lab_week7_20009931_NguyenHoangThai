@@ -1,13 +1,13 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.repositories;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.repositories;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.connectDb.ConnectFactory;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.enums.*;
-import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.models.Employee;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.connectDb.ConnectFactory;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.Employee;
+
 
 import java.util.List;
 
@@ -18,7 +18,7 @@ public class EmployeeRepository {
    public EmployeeRepository(){
        this.sessionFactory = ConnectFactory.getInstance().getSessionFactory();
    }
-    public void insertEmpl(Employee employee){
+    public void insertEmp(Employee employee){
         Transaction transaction = null;
         try {
             Session session = sessionFactory.openSession();
@@ -48,6 +48,7 @@ public class EmployeeRepository {
 
        return null;
    }
+
 
 
 }

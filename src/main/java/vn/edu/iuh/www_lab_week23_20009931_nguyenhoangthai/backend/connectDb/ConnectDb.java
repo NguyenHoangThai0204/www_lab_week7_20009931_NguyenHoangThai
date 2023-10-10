@@ -1,4 +1,4 @@
-package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.connectDb;
+package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.connectDb;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
