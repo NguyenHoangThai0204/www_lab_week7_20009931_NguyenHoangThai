@@ -1,15 +1,13 @@
 package vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "customer")
 public class Customer {
     @Id
     @Column(name = "cust_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "cust_name")
     private String name;

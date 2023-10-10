@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.connectDb.ConnectFactory;
 import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.Employee;
+import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.Product;
 
 
 import java.util.List;
@@ -48,7 +49,5 @@ public class EmployeeRepository {
 
        return null;
    }
-
-
 
 }
