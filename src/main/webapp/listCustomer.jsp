@@ -42,9 +42,11 @@
             </td>
         </tr>
     <%}%>
-    <div style="text-align: right;">
-        <a href="insertUpdateCus.jsp" style="margin-right: 5px;font-size: 25px;font-weight: bold;">Insert</a>
-    </div>
+    <tr style="text-align: right">
+        <td colspan="7">
+            <a href="insertUpdateCus.jsp" style="margin-right: 5px;font-size: 25px;font-weight: bold;">Insert</a>
+        </td>
+    </tr>
 </table>
 </body>
 </html>
