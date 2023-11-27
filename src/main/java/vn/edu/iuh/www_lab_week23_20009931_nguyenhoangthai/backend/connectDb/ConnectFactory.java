@@ -9,7 +9,7 @@ import vn.edu.iuh.www_lab_week23_20009931_nguyenhoangthai.backend.models.*;
 
 
 
-public class ConnectFactory{
+public class    ConnectFactory{
     private static ConnectFactory instance = null;
     private SessionFactory sessionFactory = null;
     public ConnectFactory() {

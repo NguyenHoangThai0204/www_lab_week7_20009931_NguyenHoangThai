@@ -43,6 +43,14 @@ public class Controller extends HttpServlet {
                 throw new RuntimeException(e);
             }
         }
+        if(action.equals("listProducts")){
+            try {
+                request.getRequestDispatcher("/listProducts.jsp")
+                        .forward(request, response);
+            }catch (Exception e){
+                throw new RuntimeException(e);
+            }
+        }
         if(action.equals("insertCustomer")){
             try {
                 listCus(request, response);

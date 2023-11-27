@@ -8,7 +8,7 @@ public class ConnectDb {
     private EntityManagerFactory emf;
     public ConnectDb() {
         emf = Persistence
-                .createEntityManagerFactory("www_lab_week2_20009931_NguyenHooangThai");
+                .createEntityManagerFactory("www_lab_week23_20009931_NguyenHoangThai");
     }
     public static ConnectDb getInstance() {
         if(instance == null)
